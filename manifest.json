@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "知らんけど。",
+    "version": "1.0.0",
+  
+    "description": "インターネットにはフェイクニュースやデマの情報がたくさん存在します。このアドオンではすべての文末に「知らんけど」を追加することでそれらのサイトをすべて無力化します！！",
+  
+    "icons": {
+      "128": "icons/128.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["shirankedo.css"]
+      }
+    ],
+    "applications": {
+        "gecko": {
+          "id": "shirankedo@korange.work"
+        }
+      }
+  }
+  

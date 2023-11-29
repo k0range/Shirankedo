@@ -1,0 +1,7 @@
+p::after{
+  content: "知らんけど。";
+}
+  
+div.description::after {
+  content: "知らんけど。";
+}
